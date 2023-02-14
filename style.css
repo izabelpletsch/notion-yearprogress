@@ -56,3 +56,26 @@ body {
   .text {
     margin-top : 40px;
   }
+  
+  @-webkit-keyframes progress-bar-stripes {
+    from  { background-position: 100px 0; }
+    to    { background-position: 0 0; }
+  }
+  
+  // Spec and IE10+
+  @keyframes progress-bar-stripes {
+    from  { background-position: 40px 0; }
+    to    { background-position: 0 0; }
+  }
+  
+  @media(max-width : 420px){
+    .progress {
+      width : 300px;
+    }
+  }
+  
+  @media(max-width : 200px){
+    .progress {
+      width : 150px;
+    }
+  }
